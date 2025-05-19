@@ -1,0 +1,277 @@
+/*p {
+    color: red;
+} test de linkage des pages css et html*/
+ #container {
+  display: flex;
+  justify-content: space-between; /* Sépare le titre à gauche et le menu à droite */
+  align-items: center; /* Aligne verticalement */
+  padding: 20px;
+}
+
+.list {
+  display: flex;
+  gap: 30px; /* Espace égal entre les éléments */
+  list-style: none; /* Supprime les puces */
+  margin: 0;
+  padding: 0;
+}
+/* Header */
+#container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.list {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Hero section */
+.hero {
+  position: relative;
+  text-align: center;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  max-height: 90vh;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.hero-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero-subtext {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: orange;
+  color: white;
+  font-weight: bold;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  text-shadow: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero-subtext:hover {
+  background-color: darkorange;
+}
+.services {
+  display: flex;
+  justify-content: center; /* Centre horizontalement l'ensemble */
+  align-items: flex-start; /* Aligne les blocs en haut */
+  gap: 60px;               /* Espace horizontal entre les blocs */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.service-item {
+  max-width: 250px;
+  flex: 1;                 /* Permet à chaque bloc de prendre la même largeur */
+}
+
+.service-icon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+.service-item h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: #333;
+}
+
+.service-item p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Footer */
+
+.content-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  padding: 40px 0;
+}
+
+.center-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.side-box {
+  width: 100px;
+  height: 100px;
+  padding: 8px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 0.6rem;
+}
+
+.side-box h2 {
+  font-size: 0.8rem;
+  margin: 0 0 4px;
+}
+
+.side-box hr {
+  width: 100%;
+  height: 2px;
+  background: orange;
+  border: none;
+  margin: 4px 0;
+}
+
+.side-box p {
+  margin: 4px 0;
+  color: #555;
+}
+
+.orange-button {
+  background: orange;
+  color: white;
+  font-size: 0.6rem;
+  padding: 4px 8px;
+  border: none;
+  border-radius: 12px;
+  text-decoration: none;
+  cursor: pointer;
+  width: fit-content;
+  align-self: flex-start;
+}
+
+
+/*section contacter nous*/
+
+.contact-section {
+  max-width: 700px;
+  margin: 60px auto;
+  padding: 40px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.contact-section h2 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.contact-section hr {
+  width: 80px;
+  height: 3px;
+  background-color: orange;
+  border: none;
+  margin: 10px auto 30px;
+}
+
+.contact-section p {
+  margin: 10px 0;
+  color: #444;
+}
+
+.contact-form {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.form-group {
+  flex: 1;
+  min-width: 30%;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.submit-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+/*footer*/
+.site-footer {
+  background-color: #0000008c;
+  color: #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.site-footer h1 {
+  color: white;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.site-footer .dot {
+  color: orange;
+}
+
+.site-footer p {
+  font-size: 0.9rem;
+  margin: 5px 0;
+  max-width: 600px;
+}
